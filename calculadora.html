@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+
+        function res(){
+            var resul =firstNum.value - secNum.value
+            resultado.value = resul
+        }
+
+        function mult(){
+           var resul =firstNum.value * secNum.value
+            resultado.value = resul  
+        }
+        function div(){
+            var resul =firstNum.value / secNum.value
+            resultado.value = resul 
+        }
+        function add(){
+           var resul =firstNum.value + secNum.value
+            resultado.value = resul 
+        }
+    </script>
+</head>
+<body>
+  <div class="resScr">
+    <div class="head">Calculator</div>
+        <input type="text" id="firstNum"/>
+        <input type="text" id="secNum"/>
+    </div>
+    <div class="buttons">
+        <button onclick='div()'>/</button>
+        <button onclick='mult()'>*</button>
+        <button onclick='res()'>-</button>
+        <button onclick='add()'>+</button>
+    </div>
+    <div>
+        <input type="text" id="resultado" />
+    </div>
+ 
+</body>
+</html>
